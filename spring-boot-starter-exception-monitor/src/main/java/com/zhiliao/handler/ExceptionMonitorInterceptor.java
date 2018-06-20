@@ -1,6 +1,7 @@
 package com.zhiliao.handler;
 
 import java.util.Arrays;
+
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 import org.slf4j.Logger;
@@ -13,6 +14,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import com.zhiliao.config.ExceptionMonitorProperties;
+import com.zhiliao.until.ApiResult;
 
 public class ExceptionMonitorInterceptor implements MethodInterceptor {
 
@@ -52,13 +54,13 @@ public class ExceptionMonitorInterceptor implements MethodInterceptor {
         return result;
     }
     
-    private Object handlerException(MethodInvocation invocation, Throwable e) {
+    private ApiResult<String> handlerException(MethodInvocation invocation, Throwable e) {
 		// 获取是否开通异常邮件告警
 		boolean emailState = exceptionMonitorProperties.getStatus();
 		if (emailState) {
 			processSendEmail(invocation, e);
 		}
-		return "{\"c\":500,\"m\":\"异常\",\"d\":\"\"}";
+		return new ApiResult<String>().setError(ApiResult.errorCode500, "系统异常");
 	}
     
     private void processSendEmail(MethodInvocation pjp, Throwable e) {
