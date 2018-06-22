@@ -46,3 +46,4 @@ public class TestApplication {
 - 本spring-boot-starter-exception-monitor依赖于邮件发送模块，也就是spring-boot-starter-mail包
 - 如果需要多项目中使用一定要统一返回格式，这边使用的是com.zhiliao.until.ApiResult，具体大家可以根据自己业务来，但强烈建议一定需要固定统一接口返回模板
 
+
