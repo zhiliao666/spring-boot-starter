@@ -49,4 +49,4 @@ public class TestApplication {
 
 ### 更多优质文章欢迎关注小编公众
 
-![图注:一个懒惰的程序员](https://github.com/zhiliao666/spring-boot-starter/blob/master/spring-boot-starter-exception-monitor/qrcode_for_gh_d88d06cbce83_258%20.jpg)
+![一个懒惰的程序员](https://github.com/zhiliao666/spring-boot-starter/blob/master/spring-boot-starter-exception-monitor/qrcode_for_gh_d88d06cbce83_258%20.jpg)
