@@ -47,5 +47,6 @@ public class TestApplication {
 - 如果需要多项目中使用一定要统一返回格式，这边使用的是com.zhiliao.until.ApiResult，具体大家可以根据自己业务来，但强烈建议一定需要固定统一接口返回模板
 
 
-更多优质文章欢迎关注小编公众
-![一个懒惰的程序员](https://github.com/zhiliao666/spring-boot-starter/blob/master/spring-boot-starter-exception-monitor/qrcode_for_gh_d88d06cbce83_258%20.jpg)
+### 更多优质文章欢迎关注小编公众
+
+![图注:一个懒惰的程序员](https://github.com/zhiliao666/spring-boot-starter/blob/master/spring-boot-starter-exception-monitor/qrcode_for_gh_d88d06cbce83_258%20.jpg)
