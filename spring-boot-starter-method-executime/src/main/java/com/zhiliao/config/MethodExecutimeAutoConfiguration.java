@@ -12,7 +12,6 @@ public class MethodExecutimeAutoConfiguration {
 	
 	@Bean
 	public MethodExecutimePointcut getMethodExecutimePointcut(){
-		System.out.println("getMethodExecutimePointcut---------");
 		return new MethodExecutimePointcut();
 	}
 }

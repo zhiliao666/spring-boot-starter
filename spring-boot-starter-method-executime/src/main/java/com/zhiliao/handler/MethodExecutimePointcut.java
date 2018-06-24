@@ -12,7 +12,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.zhiliao.annotation.Executime;
 import com.zhiliao.config.MethodExecutimeProperties;
-
+/**
+ * 自定义方法性能拦截端点
+ *
+ * @author zhangqh
+ * @date 2018年6月24日
+ */
 public class MethodExecutimePointcut extends AbstractPointcutAdvisor {
 
 	private static final long serialVersionUID = 1L;
@@ -29,7 +34,9 @@ public class MethodExecutimePointcut extends AbstractPointcutAdvisor {
 
 	@PostConstruct
 	public void init() {
-		logger.info("init MethodExecutimePointcut........");
+		/**
+		 * 拦截方法上标注了Executime注解的所有方法
+		 */
 		this.pointcut = new AnnotationMatchingPointcut(null,Executime.class);
 		this.advice = new ExecutimeMethodInterceptor();
 	}
