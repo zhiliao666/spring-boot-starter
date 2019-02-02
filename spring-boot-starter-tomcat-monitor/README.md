@@ -18,6 +18,10 @@
 ```
 注：该starter包是基于springboot2.0.x版本下开发的，感兴趣的小伙伴可以自己fork下来，编译打包再引入到自己的项目中试试
 
+### 简单原理介绍
+
+利用的的是tomcat的JMX mbean以及tomcat对应的监听器功能，对应可以参考TomcatMonitorLifecycleListener和TomcatInfoCollection两个类
+
 ### 更多优质文章欢迎关注小编公众
 
 ![一个懒惰的程序员](https://github.com/zhiliao666/spring-boot-starter/blob/master/spring-boot-starter-tomcat-monitor/qrcode_for_gh_d88d06cbce83_258%20.jpg)
